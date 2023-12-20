@@ -133,6 +133,8 @@ CFLAGS += -std=gnu99
 CFLAGS += -Wno-error=format 
 CFLAGS += -Wstrict-prototypes
 CFLAGS += -g
+CFLAGS += -O0 
+CFLAGS += -DDEBUG
 
 ifneq ($(HAL_IMPL), WIN32)
 CFLAGS += -Wuninitialized 
